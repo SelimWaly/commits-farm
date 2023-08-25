@@ -9,7 +9,7 @@ This project was created simply to farm GitHub commits on your account for 3 rea
 
 ## Results
 A long time ago I have create a very simple version and these were the results:
-![results](112,000 commits of results)
+!(112,000 commits on GitHub)[src/results.jpg]
 
 ## How it works?
 You might wonder what is the formula used by this program
