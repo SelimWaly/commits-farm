@@ -43,7 +43,9 @@ Here are the programming languages the numbers correspond to:
 Using this program is very simple.
 If you look in the files of this repository you will find a file called `main.py` containing the code.
 All you have to do is create an empty folder, create a python file inside of it and insert the code, then run it using any Python interpreter.
-WARNING: DO NOT RUN THIS SCRIPT IN THE DESKTOP OR ANY DIRECTORY SIMILAR TO THAT. PLEASE CREATE A FOLDER DEDICATED TO THIS FARM TO PREVENT ISSUES WITH YOUR COMPUTER OR RANDOM FILES APPEARING ON YOUR COMPUTER.
+<br>
+<br>
+**WARNING: DO NOT RUN THIS SCRIPT IN THE DESKTOP OR ANY DIRECTORY SIMILAR TO THAT. PLEASE CREATE A FOLDER DEDICATED TO THIS FARM TO PREVENT ISSUES WITH YOUR COMPUTER OR RANDOM FILES APPEARING ON YOUR COMPUTER.**
 
 ## License
 This project is under the `MIT License`. Please check `license.txt` for more information.
