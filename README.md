@@ -48,6 +48,6 @@ All you have to do is create an empty folder, create a python file inside of it 
 **WARNING: DO NOT RUN THIS SCRIPT IN THE DESKTOP OR ANY DIRECTORY SIMILAR TO THAT. PLEASE CREATE A FOLDER DEDICATED TO THIS FARM TO PREVENT ISSUES WITH YOUR COMPUTER OR RANDOM FILES APPEARING ON YOUR COMPUTER.**
 
 ## License
-This project is under the `MIT License`. Please check `license.txt` for more information.
+This project is under the `MIT License`. Please check `LICENSE` for more information.
 
 ## **Thank you for viewing this repository and happy farming**
