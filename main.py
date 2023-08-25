@@ -194,3 +194,5 @@ while True:
             print(f"Commits: {commits}")
         except Exception as e:
             print(f"Reloading due to {e}")
+    
+    time.sleep(3)
