@@ -9,7 +9,7 @@ This project was created simply to farm GitHub commits on your account for 3 rea
 3. Flex on your friends the fact that your life is just non-existent.
 
 ## Results
-A long time ago I have create a very simple version and these were the results:
+A long time ago I have create a very simple version and tested it on an alternative account and these were the results:
 <br>
 <br>
 ![112,000 commits on GitHub](src/results.jpg)
