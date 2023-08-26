@@ -42,7 +42,14 @@ Here are the programming languages the numbers correspond to:
 ## How to use
 Using this program is very simple.
 If you look in the files of this repository you will find a file called `main.py` containing the code.
-All you have to do is create an empty folder, create a python file inside of it and insert the code, then run it using any Python interpreter.
+All you have to do is create an empty folder, create a python file inside of it and insert the code, change the username with yours and write the name of an empty repository on your account to be used then run the program using any Python interpreter.
+1. Copy the contents of the file `main.py` from this repository.
+2. Create an empty repository on your account (preferably with the name `commit`).
+3. Create an empty folder on your computer dedicated to this program.
+4. Create a Python file in that new folder and paste the program's code inside of it.
+5. Change the username inside (currently written mine) and change the GitHub repository to the name of the GitHub repository you created.
+6. Run the program using any Python interpreter
+*The program should now work. If any errors or issues occur, don't hesitate to create an issue here in this repository.*
 <br>
 <br>
 **WARNING: DO NOT RUN THIS SCRIPT IN THE DESKTOP OR ANY DIRECTORY SIMILAR TO THAT. PLEASE CREATE A FOLDER DEDICATED TO THIS FARM TO PREVENT ISSUES WITH YOUR COMPUTER OR RANDOM FILES APPEARING ON YOUR COMPUTER.**
