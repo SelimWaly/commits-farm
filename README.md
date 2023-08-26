@@ -43,6 +43,7 @@ Here are the programming languages the numbers correspond to:
 Using this program is very simple.
 If you look in the files of this repository you will find a file called `main.py` containing the code.
 All you have to do is create an empty folder, create a python file inside of it and insert the code, change the username with yours and write the name of an empty repository on your account to be used then run the program using any Python interpreter.
+
 1. Install [Git Bash](https://git-scm.com/downloads) and run the installer.
 2. After setting Git Bash, enter the command `git config --global user.name "Your Name"` and replace Your Name with your actual name.
 3. After running that first command run the other command `git config --global user.email "user@domain.com"` and replace user@domain.com with the email you used to sign up for GitHub.
@@ -51,10 +52,12 @@ All you have to do is create an empty folder, create a python file inside of it 
 6. Create an empty folder on your computer dedicated to this program.
 7. Create a Python file in that new folder and paste the program's code inside of it.
 8. Change the username inside (currently written mine) and change the GitHub repository to the name of the GitHub repository you created.
-9. Run the program using any Python interpreter
+9. Run the program using any Python interpreter.
+
 *The program should now work. If any errors or issues occur, don't hesitate to create an issue here in this repository.*
 <br>
 <br>
+
 **WARNING: DO NOT RUN THIS SCRIPT IN THE DESKTOP OR ANY DIRECTORY SIMILAR TO THAT. PLEASE CREATE A FOLDER DEDICATED TO THIS FARM TO PREVENT ISSUES WITH YOUR COMPUTER OR RANDOM FILES APPEARING ON YOUR COMPUTER.**
 
 ## License
