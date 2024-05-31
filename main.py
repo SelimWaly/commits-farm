@@ -18,7 +18,7 @@ proj_dir = "D:/VSCode/GitHub Commits Farm"
 os.chdir(proj_dir)
 
 def generate_salt():
-    characters = string.ascii_lowercase + string.digits + string.punctuation
+    characters = string.ascii_lowercase + string.digits
     random_string = ''.join(random.choice(characters) for _ in range(20))
     return random_string
 
