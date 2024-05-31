@@ -1,12 +1,7 @@
 # GitHub Commits Farm
 A program that will farm and create commits on your GitHub account.
 
-## Introduction
-This project was created simply to farm GitHub commits on your account for 3 reasons:
-<br>
-1. Keep your account active.
-2. Look cool.
-3. Flex on your friends the fact that your life is just non-existent.
+This project was created simply to farm GitHub commits on your account for a cooler profile and keeping your account active:
 
 ## Results
 A long time ago I have create a very simple version and tested it on an alternative account and these were the results:
@@ -14,7 +9,7 @@ A long time ago I have create a very simple version and tested it on an alternat
 <br>
 ![112,000 commits on GitHub](src/results.jpg)
 
-## How it works?
+## How it works
 You might wonder what is the formula used by this program
 <br>
 This program does a simple operation using the built-in Python module `random` to generate a random integer from 1 to 10.
@@ -40,19 +35,18 @@ Here are the programming languages the numbers correspond to:
 <br>
 
 ## How to use
-Using this program is very simple.
-If you look in the files of this repository you will find a file called `main.py` containing the code.
-All you have to do is create an empty folder, create a python file inside of it and insert the code, change the username with yours and write the name of an empty repository on your account to be used then run the program using any Python interpreter.
-
 1. Install [Git Bash](https://git-scm.com/downloads) and run the installer.
-2. After setting Git Bash, enter the command `git config --global user.name "Your Name"` and replace Your Name with your actual name.
-3. After running that first command run the other command `git config --global user.email "user@domain.com"` and replace user@domain.com with the email you used to sign up for GitHub.
-4. Copy the contents of the file `main.py` from this repository.
-5. Create an empty repository on your account (preferably with the name `commit`).
-6. Create an empty folder on your computer dedicated to this program.
-7. Create a Python file in that new folder and paste the program's code inside of it.
-8. Change the username inside (currently written mine) and change the GitHub repository to the name of the GitHub repository you created.
-9. Run the program using any Python interpreter.
+2. Create an empty folder on your computer dedicated to this program.
+3. In your new folder, clone this repository using the command `git clone https://github.com/SelimWaly/commits-farm.git`.
+4. After cloning, enter into the repository's folder using the command `cd commits-farm`.
+5. Use a Python interpreter of your choice to run the file `main.py`.
+
+Here are the commands to copy and paste into your terminal to execute all at once:
+```sh
+git clone https://github.com/SelimWaly/commits-farm.git
+cd commits-farm
+python main.py
+```
 
 *The program should now work. If any errors or issues occur, don't hesitate to create an issue here in this repository.*
 <br>
