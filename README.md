@@ -52,7 +52,8 @@ python main.py
 <br>
 <br>
 
-**WARNING: DO NOT RUN THIS SCRIPT IN THE DESKTOP OR ANY DIRECTORY SIMILAR TO THAT. PLEASE CREATE A FOLDER DEDICATED TO THIS FARM TO PREVENT ISSUES WITH YOUR COMPUTER OR RANDOM FILES APPEARING ON YOUR COMPUTER.**
+> [!WARNING]\
+> Do not run this script on your desktop or any directory with similar importance. Please create a folder dedicated to this farm to prevent issues with your computer such as random files appearing on your computer.
 
 ## License
 This project is under the `MIT License`. Please check `LICENSE` for more information.
