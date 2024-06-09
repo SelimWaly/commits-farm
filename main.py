@@ -60,7 +60,7 @@ while True:
     print("Choosing programming language...")
     generated = random.randint(1, 10)
 
-    if generated == 1 or generated == 2 or generated == 3:
+    if generated == 1 or generated == 2:
         print("Awaiting to remove monitoring on suspiciousness from GitHub servers...")
         time.sleep(10)
 
@@ -68,7 +68,17 @@ while True:
         try:
             file_content = ""
             file_extension = ""
+            
             if generated == 4:
+                print("Creating a commit with a Dart file...")
+                file_content = """void main() {
+  print('Hello world!');
+}
+
+"""
+                file_extension = "dart"
+                
+            elif generated == 4:
                 print("Creating a commit with a C++ file...")
                 file_content = """#include <iostream>
 
