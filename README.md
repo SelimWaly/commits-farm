@@ -13,11 +13,13 @@ A long time ago I have create a very simple version and tested it on an alternat
 You might wonder what is the formula used by this program
 <br>
 This program does a simple operation using the built-in Python module `random` to generate a random integer from 1 to 10.
-After choosing a number, if the number is 1, 2 or 3 it waits 15 seconds then chooses another number.
+After choosing a number, if the number is 1 or 2 it waits 15 seconds then chooses another number.
 The rest of the numbers correspond to a progrmamming language that the program writes a simple script with to output "Hello, world!" then publish the file on GitHub with the name Temp- then a random salt then the file type of that programming language.
 <br>
 Here are the programming languages the numbers correspond to:
 <br>
+<br>
+3. Dart
 <br>
 4. C++
 <br>
@@ -58,4 +60,4 @@ python main.py
 ## License
 This project is under the `MIT License`. Please check `LICENSE` for more information.
 
-## **Thank you for viewing this repository and happy farming**
+## **Thank you for viewing this repository and happy farming!**
