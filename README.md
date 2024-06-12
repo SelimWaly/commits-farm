@@ -54,7 +54,7 @@ python main.py
 <br>
 <br>
 
-> [!WARNING]
+> [!WARNING]\
 > Do not run this script on your desktop or any directory with similar importance. Please create a folder dedicated to this farm to prevent issues with your computer such as random files appearing on your computer.
 
 ## License
