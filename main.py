@@ -5,7 +5,6 @@ account for no particular reason but
 clout, fame and the fact that it just
 looks cool.
 """
-
 import os
 import subprocess
 import random
@@ -69,7 +68,7 @@ while True:
             file_content = ""
             file_extension = ""
             
-            if generated == 4:
+            if generated == 3:
                 print("Creating a commit with a Dart file...")
                 file_content = """void main() {
   print('Hello world!');
@@ -132,22 +131,16 @@ int main() {
             
             github_repo_url = f"https://github.com/{github_username}/{repository_name}.git"
             
-            # Remove existing remote if it exists
-            subprocess.run(["git", "remote", "remove", "origin"], check=True, stderr=subprocess.DEVNULL)
+            # Check if remote already exists, if not, add it
+            remote_output = subprocess.run(["git", "remote", "get-url", "origin"], capture_output=True, text=True)
+            if github_repo_url not in remote_output.stdout:
+                subprocess.run(["git", "remote", "add", "origin", github_repo_url], check=True)
             
-            subprocess.run(["git", "remote", "add", "origin", github_repo_url], check=True)
+            # Clean untracked files
+            subprocess.run(["git", "clean", "-f", "-d"], check=True)
             
-            # Fetch the latest changes from the remote repository
-            subprocess.run(["git", "fetch", "origin"], check=True)
-            
-            # Stash any local changes
-            subprocess.run(["git", "stash"], check=True)
-            
-            # Rebase the local changes on top of the remote changes
-            subprocess.run(["git", "rebase", "origin/master"], check=True)
-            
-            # Apply the stashed changes, if any
-            subprocess.run(["git", "stash", "pop"], check=True, stderr=subprocess.DEVNULL)
+            # Pull changes from the remote repository, allowing unrelated histories
+            subprocess.run(["git", "pull", "origin", "master", "--allow-unrelated-histories"], check=True)
             
             # Push the changes to the remote repository
             subprocess.run(["git", "push", "-u", "origin", "master"], check=True)
@@ -158,4 +151,4 @@ int main() {
         except subprocess.CalledProcessError as e:
             print(f"Reloading due to {e}")
 
-    time.sleep(3)
+    time.sleep(10)
