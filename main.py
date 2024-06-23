@@ -55,13 +55,15 @@ commits = 0
 
 print(f"Running GitHub Commits Farm at Timestamp [{datetime.now().strftime('%H:%M:%S')}]...")
 
+script_name = os.path.basename(__file__)
+
 while True:
     print("Choosing programming language...")
     generated = random.randint(1, 10)
 
     if generated == 1 or generated == 2:
         print("Awaiting to remove monitoring on suspiciousness from GitHub servers...")
-        time.sleep(10)
+        time.sleep(2)
 
     else:
         try:
@@ -136,8 +138,11 @@ int main() {
             if github_repo_url not in remote_output.stdout:
                 subprocess.run(["git", "remote", "add", "origin", github_repo_url], check=True)
             
-            # Clean untracked files
-            subprocess.run(["git", "clean", "-f", "-d"], check=True)
+            # Clean untracked files, excluding this script
+            for root, dirs, files in os.walk(proj_dir):
+                for file in files:
+                    if file != script_name:
+                        os.remove(os.path.join(root, file))
             
             # Pull changes from the remote repository, allowing unrelated histories
             subprocess.run(["git", "pull", "origin", "master", "--allow-unrelated-histories"], check=True)
@@ -145,10 +150,9 @@ int main() {
             # Push the changes to the remote repository
             subprocess.run(["git", "push", "-u", "origin", "master"], check=True)
 
-            os.remove(file_path)
             commits += 1
             print(f"Commits: {commits}")
         except subprocess.CalledProcessError as e:
             print(f"Reloading due to {e}")
 
-    time.sleep(10)
+    # time.sleep(10)
